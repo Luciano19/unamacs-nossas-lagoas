@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/lista-lagoa', function () {
+    return view('lista_lagoas');
+});
+
+Route::get('/lagoa', function () {
+    return view('lagoa');
 });

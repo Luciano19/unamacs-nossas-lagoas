@@ -1,0 +1,266 @@
+header {
+    background-color: black;
+}  
+
+.container {
+    padding: 0;
+}
+
+#home, #projeto, #quem-somos, #blog, #fale-conosco, #lagoas {
+    color:#fff;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#lagoas {
+    border-bottom: 2px solid #39b54a;
+}
+
+#lagoas:hover, #home:hover, #projeto:hover, #quem-somos:hover, #blog:hover, #fale-conosco:hover {
+    border-bottom: 2px solid #39b54a;
+    transition-delay: 150ms;
+}
+
+#itens-menu  {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 600px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item{
+    margin-right: 5px;
+}
+
+#logo-lagoas {
+    margin: 0 0 0 30px;
+    width: 100px;
+}
+
+/* CONTAINER IMAGEM */
+
+#imagem-topo {
+    background-image: url('../img/lagoas/lagoa-geladinho-recorte.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    color: white;
+    min-height: 275px;
+}
+
+.topo {
+    margin: 30px 0 0 100px;
+    display: inline-block;
+}
+
+.topo h1 {
+    font-size: 96px;
+    font-family: 'Righteous', cursive;
+    text-shadow: 5px 5px 5px black;
+}
+
+.bloco {
+    justify-content: center;
+    align-items: center;    
+    padding: 10px 0 ;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tit-topo {
+    margin-top: 100px;
+}
+
+.tit-topo h1 {
+    font-size: 96px;
+    font-family: 'Righteous', cursive;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+.bloco-lagoas{
+    background-color: #fff;
+}
+
+.titulo h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.titulo h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.descricao h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+#imagem-topo h3{
+    color: #39b54a;
+}
+
+.lagoas {
+    margin: 40px auto;
+}
+
+#imagem-lagoa {
+    width: auto;
+    padding: 0;
+}
+
+.descricao {
+    margin-top: 20px;
+}
+
+.descricao h2 {
+    color: #39b54a;
+}
+
+.descricao p {
+    color: black;;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.descricao hr{
+    background-color: #39b54a;
+}
+
+.botao {
+    margin: 0 auto;
+    align-items: center;
+}
+
+#map-button {
+    width: 180px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.descricao .btn {
+    border-radius: 0;
+    border: 2px solid #39b54a;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: #39b54a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nome-lagoa hr, #separa-titulo-lagoa {
+    background-color: #39b54a;
+    height: 2px;
+    width: 50px;
+}
+
+.nome-lagoa h1 {
+    font-size: 45px;
+    font-family:  'Raleway', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-lagoas {
+    margin-top: 40px;
+}
+
+#fluxo-site {
+    margin-top: 20px;
+}
+
+#fluxo-site h3{
+    color: #FFF;
+    font-weight: normal;
+}
+
+.color-word {
+    color: #39b54a;
+}
+
+.content-lagoa {
+    margin-top: 80px;
+}
+
+#descricao-lagoa {
+    margin-top: 60px;
+}
+
+#descricao-lagoa h2, .informacoes-lagoa h2, #caracteristicas-lagoa h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #434345;
+    margin: 0px 0px 19px;
+    font-weight: bold;
+}
+
+.content-informacoes h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #434345;
+}
+
+.content-informacoes {
+    margin-top: 20px;
+}
+
+.content-informacoes h2 {
+    color:#39b54a;
+}
+
+#btn-form {
+    border: 2px solid #39b54a;
+    color: #39b54a;
+    font-family: 'Montserrat', sans-serif;
+    height: 46px;
+    border-radius: 0%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#btn-form:hover {
+    background-color: #39b54a;
+    color: #fff;
+}
+
+#mostra-lagoas {
+    margin-bottom: 15px;
+}
+
+.titulo .btn {
+    width: 295px;
+    font-family: 'Montserrat', sans-serif;
+    height: 46px;
+    border-radius: 0%;
+    text-transform: uppercase;
+}
+
+#botao-lista {
+    background-color: #39b54a;
+}
+
+#botao-mapa {
+    background-color: #434345;
+}
+
+#separa-titulo-lagoa {
+    background-color: #39b54a;
+}
+
+.lista-lagoas {
+    margin-bottom: 30px;
+}
