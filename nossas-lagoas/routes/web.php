@@ -22,3 +22,7 @@ Route::get('/lista-lagoa', function () {
 Route::get('/lagoa', function () {
     return view('lagoa');
 });
+
+Route::get('/cadastro-lagoa', function () {
+    return view('cadastro_lagoas');
+});
