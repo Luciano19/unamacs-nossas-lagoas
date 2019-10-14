@@ -26,3 +26,5 @@ Route::get('/lagoa', function () {
 Route::get('/cadastro-lagoa', function () {
     return view('cadastro_lagoas');
 });
+
+Route::resource('lagoas', 'LagoaController');
