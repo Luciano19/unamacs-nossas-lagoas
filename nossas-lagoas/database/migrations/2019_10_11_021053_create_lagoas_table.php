@@ -15,6 +15,14 @@ class CreateLagoasTable extends Migration
     {
         Schema::create('lagoas', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('nome');
+            $table->string('descricao');
+            $table->bigInteger('fisicoquimica_id')->unsigned();
+            $table->foreign('fisicoquimica_id')->references('id')->on('fisicoquimicas');
+            $table->bigInteger('biologica_id')->unsigned();
+            $table->foreign('biologica_id')->references('id')->on('biologicas');
+            $table->bigInteger('localidade_id')->unsigned();
+            $table->foreign('localidade_id')->references('id')->on('localidades');
             $table->timestamps();
         });
     }

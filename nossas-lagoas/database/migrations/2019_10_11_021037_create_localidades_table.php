@@ -15,6 +15,8 @@ class CreateLocalidadesTable extends Migration
     {
         Schema::create('localidades', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('bairro');
+            $table->string('ponto_ref');
             $table->timestamps();
         });
     }

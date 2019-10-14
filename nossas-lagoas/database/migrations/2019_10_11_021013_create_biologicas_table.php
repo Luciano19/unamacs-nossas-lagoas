@@ -15,6 +15,8 @@ class CreateBiologicasTable extends Migration
     {
         Schema::create('biologicas', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('coliformes');
+            $table->string('bacterias');
             $table->timestamps();
         });
     }

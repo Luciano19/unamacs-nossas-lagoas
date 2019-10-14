@@ -13,7 +13,22 @@ class CreateFisicoQuimicasTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('fisicoquimicas', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('turbidez');
+            $table->string('solidos_totais');
+            $table->string('condutividade');
+            $table->string('ph');
+            $table->string('nitrogenio');
+            $table->string('fosforo');
+            $table->string('oxigenio');
+            $table->string('gas_carbonico');
+            $table->string('temperatura');
+            $table->string('cloretos');
+            $table->string('dureza');
+            $table->string('alcalinidade');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +38,6 @@ class CreateFisicoQuimicasTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('fisicoquimicas');
     }
 }
