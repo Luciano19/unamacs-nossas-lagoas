@@ -12,7 +12,8 @@ class LagoaController extends Controller
 {
     public function index()
     {
-        //
+        $lagoas = Lagoa::all();
+        //return view('lagoas_listar', compact('lagoas'));
     }
     /**
      * Show the form for creating a new resource.
@@ -34,7 +35,7 @@ class LagoaController extends Controller
      */
     public function store(Request $request)
     {
-        $lagoa = new lagoa();
+        $lagoa = new Lagoa();
         $lagoa->nome = $request->input("nome");
         $lagoa->descricao = $request->input("descricao");
         $lagoa->fisicoquimica_id = $request->input("fisicoquimica_id");
@@ -72,12 +73,7 @@ class LagoaController extends Controller
      */
     public function update(Request $request, Lagoa $lagoa)
     {
-        $lagoa->nome = $request->input("nome");
-        $lagoa->descricao = $request->input("descricao");
-        $lagoa->tipo_id = $request->input("tipo_id");
-        $lagoa->usuario_id = $request->input("usuario_id");
-        $lagoa->save();
-        return redirect()->route('lagoas.index');
+        //
     }
     /**
      * Remove the specified resource from storage.
@@ -87,7 +83,6 @@ class LagoaController extends Controller
      */
     public function destroy(Lagoa $lagoa)
     {
-        $lagoa->delete();
-        return redirect()->route('lagoas.index');
+        //
     }
 }

@@ -8,7 +8,8 @@ class FisicoQuimicaController extends Controller
 {
     public function index()
     {
-        //
+        $fisicoquimicos = Fisicoquimico::all();
+        //return view('fisicoquimicos_listar', compact('fisicoquimicos'));
     }
     /**
      * Show the form for creating a new resource.
@@ -60,7 +61,7 @@ class FisicoQuimicaController extends Controller
      */
     public function edit(Fisicoquimica $fisicoquimica)
     {
-    
+        //
     }
     /**
      * Update the specified resource in storage.
@@ -71,19 +72,7 @@ class FisicoQuimicaController extends Controller
      */
     public function update(Request $request, Fisicoquimica $fisicoquimica)
     {
-        $fisicoquimica->turbidez = $request->input("turbidez");
-        $fisicoquimica->solidos_totais = $request->input("solidos_totais");
-        $fisicoquimica->condutividade = $request->input("condutividade");
-        $fisicoquimica->ph = $request->input("ph");
-        $fisicoquimica->nitrogenio = $request->input("nitrogenio");
-        $fisicoquimica->oxigenio = $request->input("oxigenio");
-        $fisicoquimica->gas_carbonico = $request->input("gas_carbonico");
-        $fisicoquimica->temperatura = $request->input("temperatura");
-        $fisicoquimica->cloretos = $request->input("cloretos");
-        $fisicoquimica->dureza = $request->input("dureza");
-        $fisicoquimica->alcalinidade = $request->input("alcalinidade");
-        $fisicoquimica->save();
-        return redirect()->route('fisicoquimicas.index');
+        //
     }
     /**
      * Remove the specified resource from storage.
@@ -93,6 +82,6 @@ class FisicoQuimicaController extends Controller
      */
     public function destroy(Fisicoquimica $fisicoquimica)
     {
-
+        //
     }
 }

@@ -8,7 +8,8 @@ class BiologicaController extends Controller
 {
     public function index()
     {
-        //
+        $biologicas = Biologico::all();
+        //return view('biologica_listar', compact('biologicas'));
     }
     /**
      * Show the form for creating a new resource.
@@ -51,7 +52,7 @@ class BiologicaController extends Controller
      */
     public function edit(Biologica $biologica)
     {
-    
+        //
     }
     /**
      * Update the specified resource in storage.
@@ -62,10 +63,7 @@ class BiologicaController extends Controller
      */
     public function update(Request $request, Biologica $biologica)
     {
-        $biologica->coliformes = $request->input("coliformes");
-        $biologica->bacterias = $request->input("bacterias");
-        $biologica->save();
-        return redirect()->route('biologicas.index');
+        //
     }
     /**
      * Remove the specified resource from storage.
@@ -75,6 +73,6 @@ class BiologicaController extends Controller
      */
     public function destroy(Biologica $biologica)
     {
-
+        //
     }
 }

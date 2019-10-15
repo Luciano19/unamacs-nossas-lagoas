@@ -6,12 +6,13 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Cadastro de Lagoas</title>
     </head>
-    @extends(["current"=>"tarefas"])
+    @extends(["current"=>"lagoas"])
     </head>
     <body>
         <div class="container col-10">
             <form action = "{{route('lagoas.store')}}" method = "POST">
             @csrf
+                <h1>Davy</h1>
                 <label for="nome">Nome</label>
                 <input  type = "text" class = "form-control" id="nome" name="nome" placeholder="" value="" required>
             </form>

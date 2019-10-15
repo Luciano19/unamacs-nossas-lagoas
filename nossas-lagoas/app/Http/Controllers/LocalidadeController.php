@@ -9,7 +9,8 @@ class LocalidadeController extends Controller
 {
     public function index()
     {
-        //
+        $localidades = Localidade::all();
+        //return view('localidades_listar', compact('localidades'));
     }
     /**
      * Show the form for creating a new resource.
@@ -28,7 +29,7 @@ class LocalidadeController extends Controller
      */
     public function store(Request $request)
     {
-        $localidade = new localidade();
+        $localidade = new Localidade();
         $localidade->bairro = $request->input("bairro");
         $localidade->ponto_ref = $request->input("ponto_ref");
         $localidade->save();
@@ -52,7 +53,7 @@ class LocalidadeController extends Controller
      */
     public function edit(Localidade $localidade)
     {
-    
+        //
     }
     /**
      * Update the specified resource in storage.
@@ -63,10 +64,7 @@ class LocalidadeController extends Controller
      */
     public function update(Request $request, Localidade $localidade)
     {
-        $localidade->bairro = $request->input("bairro");
-        $localidade->ponto_ref = $request->input("ponto_ref");
-        $localidade->save();
-        return redirect()->route('localidades.index');
+        //
     }
     /**
      * Remove the specified resource from storage.
@@ -76,6 +74,6 @@ class LocalidadeController extends Controller
      */
     public function destroy(Localidade $localidade)
     {
-
+        //
     } 
 }
