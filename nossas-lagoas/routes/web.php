@@ -11,6 +11,7 @@
 |
 */
 
+use App\Http\Controllers\LagoaController;
 
 Route::get('/', function () {
     return view('index');
@@ -28,4 +29,8 @@ Route::get('/cadastro-lagoa', function () {
     return view('cadastro_lagoas');
 });
 
+Route::get('/lagoa/cadastro', 'LagoaController@create')->name('lagoa.create');
 Route::resource('lagoas', 'LagoaController');
+//Route::resource('fisicoquimicas', 'FisicoquimicaController');
+//Route::resource('biologicas', 'BiologicaController');
+//Route::resource('localidades', 'LocalidadeController');

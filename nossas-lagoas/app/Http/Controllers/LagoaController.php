@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Lagoa;
 use App\Biologica;
-use App\FisicoQuimica;
+use App\Fisico_quimica;
 use App\Localidade;
 use Illuminate\Http\Request;
 
@@ -23,9 +23,9 @@ class LagoaController extends Controller
     public function create()
     {
         $localidades = Localidade::all();
-        $fisicoquimicas = FisicoQuimica::all();
+        //$fisicoquimicas = Fisicoquimica::all();
         $biologicas = Biologica::all();
-        return view('cadastro_lagoa', compact('localidades', 'fisicoquimicas', 'biologicas'));
+        return view('cadastro_lagoas', compact('localidades', /*'fisicoquimicas',*/ 'biologicas'));
     }
     /**
      * Store a newly created resource in storage.

@@ -8,7 +8,7 @@ class FisicoQuimicaController extends Controller
 {
     public function index()
     {
-        $fisicoquimicos = Fisicoquimico::all();
+        $fisicoquimicas = Fisicoquimica::all();
         //return view('fisicoquimicos_listar', compact('fisicoquimicos'));
     }
     /**
