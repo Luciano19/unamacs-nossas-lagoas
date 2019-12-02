@@ -17,12 +17,27 @@ class CreateLagoasTable extends Migration
             $table->bigIncrements('id');
             $table->string('nome');
             $table->string('descricao');
-            $table->bigInteger('fisicoquimica_id')->unsigned();
+            $table->string('bairro');
+            $table->string('ponto_ref');
+            $table->string('turbidez');
+            $table->string('solidos_totais');
+            $table->string('condutividade');
+            $table->string('ph');
+            $table->string('nitrogenio');
+            $table->string('oxigenio');
+            $table->string('gas_carbonico');
+            $table->string('temperatura');
+            $table->string('cloretos');
+            $table->string('dureza');
+            $table->string('alcalinidade');
+            $table->string('coliformes');
+            $table->string('bacterias');
+            /*$table->bigInteger('fisicoquimica_id')->unsigned();
             $table->foreign('fisicoquimica_id')->references('id')->on('fisicoquimicas');
             $table->bigInteger('biologica_id')->unsigned();
             $table->foreign('biologica_id')->references('id')->on('biologicas');
             $table->bigInteger('localidade_id')->unsigned();
-            $table->foreign('localidade_id')->references('id')->on('localidades');
+            $table->foreign('localidade_id')->references('id')->on('localidades');*/
             $table->timestamps();
         });
     }

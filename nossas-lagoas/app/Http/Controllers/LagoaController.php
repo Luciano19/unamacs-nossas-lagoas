@@ -38,9 +38,28 @@ class LagoaController extends Controller
         $lagoa = new Lagoa();
         $lagoa->nome = $request->input("nome");
         $lagoa->descricao = $request->input("descricao");
-        $lagoa->fisicoquimica_id = $request->input("fisicoquimica_id");
+        
+        $lagoa->bairro = $request->input("bairro");
+        $lagoa->ponto_ref = $request->input("ponto_ref");
+
+        $lagoa->turbidez = $request->input("turbidez");
+        $lagoa->solidos_totais = $request->input("solidos_totais");
+        $lagoa->condutividade = $request->input("condutividade");
+        $lagoa->ph = $request->input("ph");
+        $lagoa->nitrogenio = $request->input("nitrogenio");
+        $lagoa->oxigenio = $request->input("oxigenio");
+        $lagoa->gas_carbonico = $request->input("gas_carbonico");
+        $lagoa->temperatura = $request->input("temperatura");
+        $lagoa->cloretos = $request->input("cloretos");
+        $lagoa->dureza = $request->input("dureza");
+        $lagoa->alcalinidade = $request->input("alcalinidade");
+
+        $lagoa->coliformes = $request->input("coliformes");
+        $lagoa->bacterias = $request->input("bacterias");
+
+        /*$lagoa->fisicoquimica_id = $request->input("fisicoquimica_id");
         $lagoa->biologica_id = $request->input("biologica_id");
-        $lagoa->localidade_id = $request->input("localidade_id");
+        $lagoa->localidade_id = $request->input("localidade_id");*/
         $lagoa->save();
         return redirect()->route('lagoas.index');
     }
